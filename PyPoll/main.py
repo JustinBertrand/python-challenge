@@ -1,8 +1,8 @@
 import os
 import csv
 
-read_path = os.path.join("PyPoll", "Resources", "election_data.csv")
-write_path = os.path.join("PyPoll", "output.txt")
+read_path = os.path.join("Resources", "election_data.csv")
+write_path = os.path.join("output.txt")
 vote_stats = {} #establish dictionary to hold dictionaries of candidate stats
 total_votes = 0
 most_votes = 0
@@ -42,7 +42,7 @@ readout = readout + (f"-------------------------\nWinner: {winner}") #add winner
 print(readout)
 
 # Specify the file to write to
-write_path = os.path.join("PyPoll", "output.txt")
+write_path = os.path.join("output.txt")
 
 # Open the file using "write" mode. Specify the variable to hold the contents
 with open(write_path, "w") as output_file:

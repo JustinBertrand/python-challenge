@@ -1,7 +1,7 @@
 import os
 import csv
 
-read_path = os.path.join("PyBank", "Resources", "budget_data.csv")
+read_path = os.path.join("Resources", "budget_data.csv")
 
 months = 0
 profit_loss = 0
@@ -46,7 +46,7 @@ with open(read_path, newline = "", encoding = "utf8") as temp_file:
 print(f"Total Months: {months}\nTotal: ${profit_loss}\nAverage Change: ${round(average_change, 2)}\nGreatest Increase in Profits: {max_inc_month} (${max_inc})\nGreatest Decrease in Profits: {max_dec_month} (${max_dec})")
 
 # Specify the file to write to
-write_path = os.path.join("PyBank", "output.txt")
+write_path = os.path.join("output.txt")
 
 # Open the file using "write" mode. Specify the variable to hold the contents
 with open(write_path, "w") as output_file:
