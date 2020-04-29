@@ -24,6 +24,8 @@
 
 * In this challenge, I created a Python script to help a small, rural town modernize its vote-counting process. 
 
+### Requirements
+
 * Given a set of poll data ([election_data.csv](PyPoll/Resources/election_data.csv)) composed of three columns: `Voter ID`, `County`, and `Candidate`, create a Python script that analyzes the votes and calculates each of the following:
 
   * The total number of votes cast
